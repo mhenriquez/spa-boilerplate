@@ -203,7 +203,7 @@
 				slides.parent().wrap('<div class="slides" />');
 
 				$(this).find('.slidesContainer').css('width', sliderWidth + '%');
-                $(this).find('.slides').after('<div class="controlArrow prev"><i class="fa fa-chevron-left"></i></div><div class="controlArrow next"><i class="fa fa-chevron-right"></i></div>'); // Updated 3/13/14
+                $(this).find('.slides').after('<div class="controlArrow prev"><i class="fa fa-chevron-left"></i></div><div class="controlArrow next"><i class="fa fa-chevron-right"></i></div>'); // Updated 3/13/14. Now uses bootstrap icons.
 				
 				if(options.controlArrowColor!='#fff'){
 					$(this).find('.controlArrow.next').css('border-color', 'transparent transparent transparent '+options.controlArrowColor);

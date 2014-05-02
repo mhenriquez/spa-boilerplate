@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>UCF Joust</title>
+    <title>UCF Lockstep MBA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <link rel="shortcut icon" href="//www.bus.ucf.edu/views/images/favicon.ico" type="image/ico" />
@@ -24,7 +24,7 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <h1 class="ucf">University of Centsseral Florida</h1>
+    <a href="//www.ucf.edu"><h1 class="ucf">University of Centsseral Florida</h1></a>
 
     <!--BEGIN: Content-->
     <div id="site-container">
@@ -33,40 +33,65 @@
         <div class="section active">
             <div class="container">
 
-                <div class="fullPage-header"><h2>Title</h2></div>
-
-                <div class="slide"><!-- Page 1 -->
+                <div class="slide">
                     <div class="row">
+
                         <div class="col-xs-12 col-md-6">
-                            <h3>2014 Joust Winner</h3>
-                            <h4>Quarterwear (Funlola Falade, David Green)</h4>
+                            <h3>H3 Title</h3>
+                            <h4>H4 Title</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur turpis nulla, in pellentesque orci semper quis. Sed vel ante velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed lacinia suscipit dolor nec placerat. Nulla facilisi. Etiam fringilla nulla quis scelerisque posuere. Nunc eget interdum nulla, at molestie ipsum. In hac habitasse platea dictumst. Donec vitae consequat dui.</p>
                             <p>Nulla mattis arcu ligula, quis malesuada dui interdum vel. Praesent a ante enim. Nunc imperdiet pretium neque, vitae sodales orci auctor et. Praesent blandit elit vel massa feugiat, sed pretium augue scelerisque. Aliquam erat volutpat. Maecenas quis metus quis turpis tristique faucibus ullamcorper id augue. In convallis est egestas, mattis odio at, lacinia lacus. Morbi mauris arcu, tempus ac lectus ac, tincidunt bibendum velit. Aenean nec massa nisl. Suspendisse et gravida enim, aliquet placerat ligula. Morbi at vulputate quam. Nunc tincidunt facilisis libero. Nunc sed interdum enim. Suspendisse eleifend posuere varius. Duis cursus elit euismod massa euismod, quis dictum ligula vulputate. Vestibulum sed velit auctor, accumsan nibh nec, fermentum risus.</p>
                             <p>Donec pharetra nec neque sed dapibus. Nullam et consequat dui, id viverra neque. Fusce eget elit tortor. Suspendisse a commodo nisl. Vestibulum tempus, massa et condimentum vehicula, quam lorem malesuada magna, vitae laoreet sapien arcu et purus. Duis erat massa, consectetur eu est id, rutrum interdum dolor. Phasellus ut lacus a nunc sodales volutpat. Morbi volutpat suscipit tellus, eu ullamcorper felis iaculis nec. Nunc mauris diam, consequat vel posuere et, suscipit nec dui. Nam vel est non erat dapibus egestas. Sed nec dignissim odio. Donec in elit lobortis, lacinia neque ut, sodales orci. Duis volutpat magna id nunc posuere, ac faucibus nibh consequat. Pellentesque ultricies purus purus, non sollicitudin diam vulputate a. Integer dignissim tempus urna, vel vehicula arcu vehicula fermentum.</p>
                         </div>
+
                         <div class="col-xs-12 col-md-6">
                             <img src="images/joust_winner.jpg" alt="the joust logo" width="100%" height="100%" />
                         </div>
-                    </div>
-	            </div>
 
-                <div class="slide"><!-- Page 2 -->
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <h4>Presenting Sponsor:</h4>
-                            <h2>Steve Felkowitz, '79</h2>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <p><img src="images/sponsors.png" alt="sponsor logos" width="100%" /></p>
-                        </div>
                     </div>
-	            </div>
+	            </div><!-- Page 1 -->
 
                 <a class="fullPage-sectionsNav gotonext" href="#About" title="scroll for more"><i class="fa fa-chevron-down"></i></a>
 
             </div>
+            
         </div>
         <!-- FINIS: HOME-PAGE -->
+
+        <!-- BEGIN: MAIN-PAGE -->
+        <div class="section">
+            <div class="container">
+
+                <div class="slide"><!-- AACSB -->
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-6">1</div>
+                        <div class="col-xs-12 col-md-6"></div>
+
+                    </div>
+	            </div><!-- Page 1 -->
+
+                <div class="slide"><!-- WHY? -->
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-6">2</div>
+                        <div class="col-xs-12 col-md-6"></div>
+
+                    </div>
+	            </div><!-- Page 2 -->
+
+                <div class="slide"><!-- WHERE? -->
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-6">3</div>
+                        <div class="col-xs-12 col-md-6"></div>
+
+                    </div>
+	            </div><!-- Page 2 -->
+
+            </div>
+        </div>
+        <!-- FINIS: MAIN-PAGE -->
        
         <!-- BEGIN: LAST-PAGE -->
         <div class="section">
@@ -112,18 +137,18 @@
             //FullPage Settings
             $.fn.fullpage({
                 resize: false,
-                //anchors: ['Home', 'Students', 'Courses', 'Social'],
+                anchors: ['Home', 'About', 'Social'],
                 //navigation: true,
                 //navigationTooltips: ['First', 'Second', 'Third', 'Fourth'],
-                slidesNavigation: true,
-                slidesNavPosition: 'bottom',
-                navigationTooltips: [],
+                //slidesNavigation: true,
+                //slidesNavPosition: 'top',
+                navigationTooltips: ['Page 1',' Page 2'],
                 loopHorizontal: false,
                 //autoScrolling: false, // activate for desktop
                 scrollOverflow: true, // activate for mobile
                 css3: true,
                 paddingTop: '1.8em',
-                paddingBottom: '1em',
+                paddingBottom: '1.3em',
                 fixedElements: '.ucf, .copyright',
 
                 //events

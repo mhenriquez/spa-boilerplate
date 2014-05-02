@@ -11,17 +11,32 @@ html, body {
 }
 
 /* line 15, ../scss/site.scss */
+.js {
+  overflow: hidden;
+}
+
+/* line 21, ../scss/site.scss */
+.no-js .pt-page {
+  visibility: visible;
+  z-index: 1;
+}
+/* line 26, ../scss/site.scss */
+.no-js body {
+  overflow: auto;
+}
+
+/* line 31, ../scss/site.scss */
 body {
   background: #ffcc00;
 }
-/* line 19, ../scss/site.scss */
+/* line 35, ../scss/site.scss */
 body h1, body h2, body h3, body h4, body h5 {
   font-family: 'Arvo', sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
   line-height: 1.1em;
 }
-/* line 26, ../scss/site.scss */
+/* line 42, ../scss/site.scss */
 body .video-player {
   background: url(../images/video-md.png) no-repeat;
   border: 1px solid #444;
@@ -29,11 +44,11 @@ body .video-player {
   width: 420px;
   height: 280px;
 }
-/* line 33, ../scss/site.scss */
+/* line 49, ../scss/site.scss */
 body .video-player:hover {
   cursor: pointer;
 }
-/* line 47, ../scss/site.scss */
+/* line 63, ../scss/site.scss */
 body .ucf {
   background-image: url(../images/ucflogo.png);
   background-repeat: no-repeat;
@@ -44,7 +59,7 @@ body .ucf {
   */
   text-indent: -999px;
 }
-/* line 58, ../scss/site.scss */
+/* line 74, ../scss/site.scss */
 body .copyright {
   padding: 5px;
   font-size: .6em;
@@ -56,30 +71,30 @@ body .copyright {
 }
 
 @media screen and (max-width: 999px) {
-  /* line 72, ../scss/site.scss */
+  /* line 88, ../scss/site.scss */
   body {
     background: #ffcc00 url(../images/bg-lg.jpg) no-repeat fixed top center;
     background-size: contain;
   }
-  /* line 76, ../scss/site.scss */
+  /* line 92, ../scss/site.scss */
   body .ucf {
     position: absolute;
     top: -1.5%;
     left: 1.5%;
   }
-  /* line 82, ../scss/site.scss */
+  /* line 98, ../scss/site.scss */
   body .video-player {
     width: 230px;
     height: 170px;
   }
-  /* line 87, ../scss/site.scss */
+  /* line 103, ../scss/site.scss */
   body .col-md-3 {
     height: 100%;
     min-height: 130px;
   }
 }
 @media screen and (max-width: 599px) {
-  /* line 98, ../scss/site.scss */
+  /* line 114, ../scss/site.scss */
   body .ucf {
     position: absolute;
     background-size: 200px;
@@ -88,24 +103,20 @@ body .copyright {
     top: -3.5%;
     left: 1.5%;
   }
-  /* line 107, ../scss/site.scss */
+  /* line 123, ../scss/site.scss */
   body .video-player {
     background: url(../images/video-md.png) no-repeat;
     border: 1px solid #444;
     border-radius: 5px;
   }
-  /* line 112, ../scss/site.scss */
-  body .slide img {
-    width: 50%;
-  }
 }
 @media screen and (min-width: 1000px) {
-  /* line 121, ../scss/site.scss */
+  /* line 135, ../scss/site.scss */
   body {
     background: #ffcc00 url(../images/bg-lg.jpg) no-repeat fixed center;
     background-size: contain;
   }
-  /* line 125, ../scss/site.scss */
+  /* line 139, ../scss/site.scss */
   body .ucf {
     position: absolute;
     background-size: 300px;
@@ -114,7 +125,7 @@ body .copyright {
     top: 0;
     left: 1.5%;
   }
-  /* line 135, ../scss/site.scss */
+  /* line 149, ../scss/site.scss */
   body .video-player {
     background: url(../images/video-md.png) no-repeat;
     border: 1px solid #444;
@@ -122,11 +133,11 @@ body .copyright {
     width: 420px;
     height: 280px;
   }
-  /* line 142, ../scss/site.scss */
+  /* line 156, ../scss/site.scss */
   body .video-player:hover {
     cursor: pointer;
   }
-  /* line 147, ../scss/site.scss */
+  /* line 161, ../scss/site.scss */
   body .col-md-3 {
     height: 100%;
     min-height: 300px;
