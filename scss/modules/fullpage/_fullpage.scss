@@ -1,10 +1,10 @@
-/**
-* fullPage 1.6.6
-* https://github.com/alvarotrigo/fullPage.js
-* MIT licensed
-*
-* Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
-*/
+/*
+ * fullPage 2.0.7
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
 
 #superContainer {
     height: 100%;
@@ -49,7 +49,27 @@
     float: left;
     position: relative;
 }
-
+.controlArrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    font-size: 2em;
+    /*border-style: solid;*/
+    margin-top: -38px;
+}
+.controlArrow.prev {
+    left: 15px;
+    width: 0;
+    /*border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;*/
+}
+.controlArrow.next {
+    right: 15px;
+    /*border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;*/
+}
 .scrollable {
     overflow: scroll;
 }
@@ -59,7 +79,6 @@
     -o-transition: all 0.7s ease-out;
     transition: all 0.7s ease-out;
 }
-
 #fullPage-nav {
     position: fixed;
     z-index: 100;
@@ -141,4 +160,71 @@
 }
 .fullPage-tooltip.left {
     left: 20px;
+}
+
+
+// Tablet
+@media screen and (max-width: 999px){
+    .controlArrow {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        font-size: 2em;
+        /*border-style: solid;*/
+        margin-top: -38px;
+        display: none;
+    }
+    .controlArrow.prev {
+        left: 15px;
+        width: 0;
+        /*border-width: 38.5px 34px 38.5px 0;
+        border-color: transparent #fff transparent transparent;*/
+    }
+    .controlArrow.next {
+        right: 15px;
+        /*border-width: 38.5px 0 38.5px 34px;
+        border-color: transparent transparent transparent #fff;*/
+    }
+}
+
+// Mobile
+@media screen and (max-width: 599px){
+    .controlArrow {
+        position: absolute;
+        top: 90%;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        font-size: 2em;
+        margin-top: -38px;
+    }
+    .controlArrow.prev {
+        left: 15px;
+        width: 0;
+    }
+    .controlArrow.next {
+        right: 35px;
+    }
+}
+
+// Small Desktop
+@media screen and (min-width: 1000px){
+    .controlArrow {
+        position: absolute;
+        top: 30%;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        font-size: 2em;
+        margin-top: -38px;
+    }
+    .controlArrow.prev {
+        left: 15px;
+        width: 0;
+    }
+    .controlArrow.next {
+        right: 35px;
+    }
 }

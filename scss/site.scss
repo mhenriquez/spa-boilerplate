@@ -9,34 +9,25 @@ Primary Styles
 html {
     margin: 0;
     padding: 0;
-	overflow:hidden;
-}
-
-.js {
-    overflow: hidden;
-}
-
-.no-js  {
-    
-    .pt-page {
-        visibility: visible;
-	    z-index: 1;
-    }
-
-    body {
-        overflow: auto;
-    }
+	overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
     @extend html;
-    background: #ffcc00;
+    
+    background: #ededed url(../images/bg-lg.jpg) no-repeat fixed top center;
+    background-size: cover;
 
     h1, h2, h3, h4, h5 {
         font-family: 'Arvo', sans-serif;
 	    letter-spacing: 1px;
 	    font-weight: 400;
         line-height: 1.1em;
+    }
+
+    .coursetitle {
+        color:#fff;
     }
 
     .video-player {
@@ -50,19 +41,33 @@ body {
             cursor:pointer;
         }
     }
+
+    //--------------------------------------------------------
+    //SECTIONS
     
-    //.section:nth-child(2n) { /*evens*/
-    //    background: rgba(0,0,0,.8);
-    //    color: #fff;
-    //}
-    //
-    //.section:nth-child(2n+1) { /*odds*/
-    //}
+    .section:nth-child(2n) { /*evens*/
+        background: rgba(0,0,0,.4);
+        color: #fff;
+    }
     
+    .section:nth-child(2n+1) { /*odds*/
+        background: #fff;
+        color: #333;
+    }
+    
+    .section:nth-child(1) {
+        background: rgba(130,130,130,.1) url(../images/mbaclass.png) top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    //--------------------------------------------------------
+    //IDENTIFIERS
 
     .ucf {
         background-image: url(../images/ucflogo.png);
         background-repeat: no-repeat;
+        position: absolute;
         /*
         background-size: 310px;
         width: 310px;
@@ -74,7 +79,7 @@ body {
     .copyright {
         padding:5px;
         font-size:.6em;
-        color:#555;
+        color:#ddd;
         position:fixed;
         bottom:0;
         left:0;
@@ -86,11 +91,11 @@ body {
 @media screen and (max-width: 999px){
     
     body {
-        background: #ffcc00 url(../images/bg-lg.jpg) no-repeat fixed top center;
-        background-size: contain;
 
         .ucf {
-            position: absolute;
+            background-size: 300px;
+            width: 300px;
+            height: 25px;
             top: -1.5%;
             left: 1.5%;
         }
@@ -100,10 +105,12 @@ body {
             height: 170px;
         }
 
-        .col-md-3 {
-            height: 100%;
-            min-height: 130px;
+        .coursetitle {
+            margin-top:40px;
+            font-size: 2.8em;
+            width: 400px;
         }
+
     }
 }
 
@@ -111,12 +118,11 @@ body {
 @media screen and (max-width: 599px){
     
     body {
+        
         .ucf {
-            position: absolute;
             background-size: 200px;
             width: 200px;
             height: 25px;
-
             top: -3.5%;
             left: 1.5%;
         }
@@ -124,6 +130,12 @@ body {
             background: url(../images/video-md.png) no-repeat;
             border:1px solid #444;
             border-radius: 5px;
+        }
+
+        .coursetitle {
+            margin-top:23px;
+            font-size: 2em;
+            width: 320px;
         }
         
     }
@@ -133,15 +145,11 @@ body {
 @media screen and (min-width: 1000px){
 
     body {
-        background: #ffcc00 url(../images/bg-lg.jpg) no-repeat fixed center;
-        background-size: contain;
         
         .ucf {
-            position: absolute;
             background-size: 300px;
             width: 300px;
             height: 25px;
-
             top: 0;
             left: 1.5%;
         }
@@ -158,9 +166,10 @@ body {
             }
         }
 
-        .col-md-3 {
-            height: 100%;
-            min-height: 300px;
+        .coursetitle {
+            margin-top:60px;
+            font-size: 3em;
+            width: 400px;
         }
     }
     
@@ -186,4 +195,3 @@ Fullpage JS
 -------------------------------------*/
 @import 'modules/fullpage/fullpage';
 @import 'modules/fullpage/section';
-@import 'modules/fullpage/slide';
