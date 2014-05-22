@@ -1,159 +1,5 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Ribeye|Arvo|Sail|Graduate|Cookie|Bevan);
-/*-------------------------------------
-Primary Styles
--------------------------------------*/
-/* line 9, ../scss/site.scss */
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-/* line 16, ../scss/site.scss */
-body {
-  background: #ededed url(../images/bg-lg.jpg) no-repeat fixed top center;
-  background-size: cover;
-}
-/* line 22, ../scss/site.scss */
-body h1, body h2, body h3, body h4, body h5 {
-  font-family: 'Arvo', sans-serif;
-  letter-spacing: 1px;
-  font-weight: 400;
-  line-height: 1.1em;
-}
-/* line 29, ../scss/site.scss */
-body .coursetitle {
-  color: #fff;
-}
-/* line 33, ../scss/site.scss */
-body .video-player {
-  background: url(../images/video-md.png) no-repeat;
-  border: 1px solid #444;
-  border-radius: 5px;
-  width: 420px;
-  height: 280px;
-}
-/* line 40, ../scss/site.scss */
-body .video-player:hover {
-  cursor: pointer;
-}
-/* line 48, ../scss/site.scss */
-body .section:nth-child(2n) {
-  /*evens*/
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-}
-/* line 53, ../scss/site.scss */
-body .section:nth-child(2n+1) {
-  /*odds*/
-  background: #fff;
-  color: #333;
-}
-/* line 58, ../scss/site.scss */
-body .section:nth-child(1) {
-  background: rgba(130, 130, 130, 0.1) url(../images/mbaclass.png) top right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/* line 67, ../scss/site.scss */
-body .ucf {
-  background-image: url(../images/ucflogo.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  /*
-  background-size: 310px;
-  width: 310px;
-  height: 25px;
-  */
-  text-indent: -999px;
-}
-/* line 79, ../scss/site.scss */
-body .copyright {
-  padding: 5px;
-  font-size: .6em;
-  color: #ddd;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-}
-
-@media screen and (max-width: 999px) {
-  /* line 95, ../scss/site.scss */
-  body .ucf {
-    background-size: 300px;
-    width: 300px;
-    height: 25px;
-    top: -1.5%;
-    left: 1.5%;
-  }
-  /* line 103, ../scss/site.scss */
-  body .video-player {
-    width: 230px;
-    height: 170px;
-  }
-  /* line 108, ../scss/site.scss */
-  body .coursetitle {
-    margin-top: 40px;
-    font-size: 2.8em;
-    width: 400px;
-  }
-}
-@media screen and (max-width: 599px) {
-  /* line 122, ../scss/site.scss */
-  body .ucf {
-    background-size: 200px;
-    width: 200px;
-    height: 25px;
-    top: -3.5%;
-    left: 1.5%;
-  }
-  /* line 129, ../scss/site.scss */
-  body .video-player {
-    background: url(../images/video-md.png) no-repeat;
-    border: 1px solid #444;
-    border-radius: 5px;
-  }
-  /* line 135, ../scss/site.scss */
-  body .coursetitle {
-    margin-top: 23px;
-    font-size: 2em;
-    width: 320px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  /* line 149, ../scss/site.scss */
-  body .ucf {
-    background-size: 300px;
-    width: 300px;
-    height: 25px;
-    top: 0;
-    left: 1.5%;
-  }
-  /* line 157, ../scss/site.scss */
-  body .video-player {
-    background: url(../images/video-md.png) no-repeat;
-    border: 1px solid #444;
-    border-radius: 5px;
-    width: 420px;
-    height: 280px;
-  }
-  /* line 164, ../scss/site.scss */
-  body .video-player:hover {
-    cursor: pointer;
-  }
-  /* line 169, ../scss/site.scss */
-  body .coursetitle {
-    margin-top: 60px;
-    font-size: 3em;
-    width: 400px;
-  }
-}
-/*-------------------------------------
-Social
--------------------------------------*/
 /* line 3, ../scss/partials/_socialbuttons.scss */
 .share-btn {
   display: inline-block;
@@ -317,9 +163,6 @@ Social
     width: 100px;
   }
 }
-/*-------------------------------------
-Fullpage JS
--------------------------------------*/
 /*
  * fullPage 2.0.7
  * https://github.com/alvarotrigo/fullPage.js
@@ -499,7 +342,7 @@ Fullpage JS
 /* line 134, ../scss/modules/fullpage/_fullpage.scss */
 #fullPage-nav li .active span,
 .fullPage-slidesNav .active span {
-  background: #333;
+  background: rgba(255, 204, 0, 0.8);
 }
 
 /* line 138, ../scss/modules/fullpage/_fullpage.scss */
@@ -537,81 +380,6 @@ Fullpage JS
   left: 20px;
 }
 
-@media screen and (max-width: 999px) {
-  /* line 168, ../scss/modules/fullpage/_fullpage.scss */
-  .controlArrow {
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-    font-size: 2em;
-    /*border-style: solid;*/
-    margin-top: -38px;
-    display: none;
-  }
-
-  /* line 179, ../scss/modules/fullpage/_fullpage.scss */
-  .controlArrow.prev {
-    left: 15px;
-    width: 0;
-    /*border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;*/
-  }
-
-  /* line 185, ../scss/modules/fullpage/_fullpage.scss */
-  .controlArrow.next {
-    right: 15px;
-    /*border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;*/
-  }
-}
-@media screen and (max-width: 599px) {
-  /* line 194, ../scss/modules/fullpage/_fullpage.scss */
-  .controlArrow {
-    position: absolute;
-    top: 90%;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-    font-size: 2em;
-    margin-top: -38px;
-  }
-
-  /* line 203, ../scss/modules/fullpage/_fullpage.scss */
-  .controlArrow.prev {
-    left: 15px;
-    width: 0;
-  }
-
-  /* line 207, ../scss/modules/fullpage/_fullpage.scss */
-  .controlArrow.next {
-    right: 35px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  /* line 214, ../scss/modules/fullpage/_fullpage.scss */
-  .controlArrow {
-    position: absolute;
-    top: 30%;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-    font-size: 2em;
-    margin-top: -38px;
-  }
-
-  /* line 223, ../scss/modules/fullpage/_fullpage.scss */
-  .controlArrow.prev {
-    left: 15px;
-    width: 0;
-  }
-
-  /* line 227, ../scss/modules/fullpage/_fullpage.scss */
-  .controlArrow.next {
-    right: 35px;
-  }
-}
 /* line 3, ../scss/modules/fullpage/_section.scss */
 .fullPage-header {
   position: absolute;
@@ -622,186 +390,328 @@ Fullpage JS
 /* line 9, ../scss/modules/fullpage/_section.scss */
 .fullPage-sectionsNav {
   /*
-  background: rgba(255,255,255,.3); //-white
-  background: rgba(255,204,0,0.63); //-yellow
+  background: rgba(255,255,255,.3); //- white
+  */
+  background: rgba(255, 204, 0, 0.3);
   border: 2px solid #ffcc00;
   border-radius: 25px;
-  */
   padding: .1em .35em;
   position: absolute;
   left: 48%;
   z-index: 100;
   text-decoration: none;
-  font-size: 1.8em;
-  color: #ffcc00;
+  color: #fff;
+    /*
+    &.gototop {
+        bottom: 10px;
+        opacity: 0.85;
+        filter: Alpha(opacity=85); //- IE8 and earlier
+
+        &:hover {
+            opacity: 1;
+            filter: Alpha(opacity=100); //- IE8 and earlier
+        }
+
+        &:before {
+            content:"Back to Top";
+            //padding-bottom: .6em;
+            text-align: center;
+            width: 80px;
+            font-size: 0.55em;
+            position: absolute;
+            bottom: 45px;
+            left: -48%;
+        }
+    }
+    */
 }
-/* line 26, ../scss/modules/fullpage/_section.scss */
-.fullPage-sectionsNav.top {
-  top: 10px;
-  opacity: 0.85;
-  filter: Alpha(opacity=85);
-  /*IE8 and earlier */
-}
-/* line 31, ../scss/modules/fullpage/_section.scss */
-.fullPage-sectionsNav.top:hover {
-  opacity: 1;
-  filter: Alpha(opacity=100);
-  /*IE8 and earlier */
-}
-/* line 37, ../scss/modules/fullpage/_section.scss */
-.fullPage-sectionsNav.bottom {
-  bottom: 10px;
-  opacity: 0.85;
-  filter: Alpha(opacity=85);
-  /*IE8 and earlier */
-}
-/* line 42, ../scss/modules/fullpage/_section.scss */
-.fullPage-sectionsNav.bottom:hover {
-  opacity: 1;
-  filter: Alpha(opacity=100);
-  /*IE8 and earlier */
-}
-/* line 48, ../scss/modules/fullpage/_section.scss */
+/* line 24, ../scss/modules/fullpage/_section.scss */
 .fullPage-sectionsNav.gotonext {
-  bottom: 20px;
+  font-size: 1.8em;
+  bottom: 5%;
   opacity: 0.85;
   filter: Alpha(opacity=85);
-  /*IE8 and earlier */
 }
-/* line 53, ../scss/modules/fullpage/_section.scss */
+/* line 30, ../scss/modules/fullpage/_section.scss */
 .fullPage-sectionsNav.gotonext:hover {
   opacity: 1;
   filter: Alpha(opacity=100);
-  /*IE8 and earlier */
 }
-/* line 58, ../scss/modules/fullpage/_section.scss */
+/* line 35, ../scss/modules/fullpage/_section.scss */
 .fullPage-sectionsNav.gotonext:before {
-  content: "Scroll for More";
+  content: "Learn More";
   text-align: center;
-  width: 80px;
-  font-size: 0.45em;
+  width: 100px;
+  font-size: 0.50em;
   position: absolute;
-  bottom: 45px;
-  left: -48%;
-}
-/* line 70, ../scss/modules/fullpage/_section.scss */
-.fullPage-sectionsNav.gototop {
-  bottom: 10px;
-  opacity: 0.85;
-  filter: Alpha(opacity=85);
-  /*IE8 and earlier */
-}
-/* line 75, ../scss/modules/fullpage/_section.scss */
-.fullPage-sectionsNav.gototop:hover {
-  opacity: 1;
-  filter: Alpha(opacity=100);
-  /*IE8 and earlier */
-}
-/* line 80, ../scss/modules/fullpage/_section.scss */
-.fullPage-sectionsNav.gototop:before {
-  content: "Back to Top";
-  text-align: center;
-  width: 80px;
-  font-size: 0.45em;
-  position: absolute;
-  bottom: 45px;
-  left: -48%;
+  bottom: 50px;
+  right: -30px;
 }
 
-@media screen and (min-width: 1000px) {
-  /* line 125, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-header {
-    position: absolute;
-    top: 5%;
-    left: 5%;
+@media (max-width: 999px) {
+  /* line 73, ../scss/modules/fullpage/_section.scss */
+  .fullPage-sectionsNav {
+    left: 47%;
   }
-  /* line 131, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav {
+}
+@media (max-width: 499px) and (orientation: portrait) {
+  /* line 83, ../scss/modules/fullpage/_section.scss */
+  .fullPage-sectionsNav {
+    left: 43%;
+  }
+}
+/* line 3, ../scss/modules/fullpage/_slide.scss */
+.controlArrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 2em;
+  margin-top: -38px;
+}
+/* line 10, ../scss/modules/fullpage/_slide.scss */
+.controlArrow.prev {
+  left: 15px;
+  width: 0;
+}
+/* line 15, ../scss/modules/fullpage/_slide.scss */
+.controlArrow.next {
+  right: 35px;
+}
+
+@media (max-width: 999px) {
+  /* line 22, ../scss/modules/fullpage/_slide.scss */
+  .controlArrow {
+    top: 90%;
+  }
+}
+@media (max-width: 499px) and (orientation: portrait) {
+  /* line 33, ../scss/modules/fullpage/_slide.scss */
+  .controlArrow {
+    top: 90%;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 40, ../scss/modules/fullpage/_slide.scss */
+  .controlArrow {
+    top: 90%;
+    cursor: pointer;
+  }
+}
+/* line 26, ../scss/site.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%;
+}
+
+/* line 34, ../scss/site.scss */
+body {
+  background: #ededed url(../images/bg-lg.jpg) no-repeat fixed top center;
+  background-size: cover;
+  position: relative;
     /*
-    background: rgba(255,255,255,.3); //-white
-    background: rgba(255,204,0,0.63); //-yellow
-    border: 2px solid #ffcc00;
-    border-radius: 25px;
+    .video-player {
+        background: url(../images/video-md.png) no-repeat;
+        border:1px solid #444;
+        border-radius: 5px;
+        width: 420px;
+        height: 280px;
+
+        &:hover {
+            cursor:pointer;
+        }
+    }
     */
-    box-shadow: 10px 10px 5px #000;
-    padding: .1em .35em;
-    position: absolute;
-    left: 48%;
-    z-index: 100;
-    text-decoration: none;
-    font-size: 1.8em;
-    color: #ffcc00;
+}
+/* line 41, ../scss/site.scss */
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: 'Arvo', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1em;
+}
+/* line 48, ../scss/site.scss */
+body .ucf {
+  background-image: url(../images/ucflogo.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  text-indent: -999px;
+}
+/* line 69, ../scss/site.scss */
+body .course-title {
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  color: #fff;
+}
+/* line 75, ../scss/site.scss */
+body .btn {
+  margin-bottom: 8px;
+}
+/* line 79, ../scss/site.scss */
+body .copyright {
+  padding: 5px;
+  font-size: 0.6em;
+  color: #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+/* line 96, ../scss/site.scss */
+body .section:nth-child(2n+1) {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+/* line 101, ../scss/site.scss */
+body .section:nth-child(2n) {
+  background: rgba(250, 250, 250, 0.1);
+  color: #333;
+}
+/* line 106, ../scss/site.scss */
+body .section:nth-child(1) {
+  background: rgba(36, 84, 128, 0.2) url(../images/mbaclass.png) top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 115, ../scss/site.scss */
+body .section .slide.testimonial .container {
+  padding: 30px;
+  height: 100%;
+  font-size: 2.3em;
+  line-height: 1.1em;
+}
+/* line 121, ../scss/site.scss */
+body .section .slide.testimonial .container h4 {
+  color: #cc9900;
+}
+/* line 125, ../scss/site.scss */
+body .section .slide.testimonial .container blockquote {
+  color: #333;
+}
+/* line 131, ../scss/site.scss */
+body .section .slide#allison {
+  background: url(../images/alaera1.png) bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 137, ../scss/site.scss */
+body .section .slide#jairo {
+  background: url(../images/jbatista1.png) bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 999px) {
+  /* line 153, ../scss/site.scss */
+  body {
+    /*
+    .video-player {
+        width: 230px;
+        height: 170px;
+    }
+    */
   }
-  /* line 149, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.top {
-    top: 10px;
-    opacity: 0.85;
-    filter: Alpha(opacity=85);
-    /*IE8 and earlier */
+  /* line 155, ../scss/site.scss */
+  body .ucf {
+    background-size: 300px;
+    width: 300px;
+    height: 25px;
+    top: -1.5%;
+    left: 1.5%;
   }
-  /* line 154, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.top:hover {
-    opacity: 1;
-    filter: Alpha(opacity=100);
-    /*IE8 and earlier */
+  /* line 170, ../scss/site.scss */
+  body .course-title {
+    margin-top: 30px;
+    max-width: 400px;
+    font-size: 6em;
   }
-  /* line 160, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.bottom {
-    bottom: 10px;
-    opacity: 0.85;
-    filter: Alpha(opacity=85);
-    /*IE8 and earlier */
+  /* line 185, ../scss/site.scss */
+  body .section .slide#allison, body .section .slide#jairo {
+    background-size: 130%;
   }
-  /* line 165, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.bottom:hover {
-    opacity: 1;
-    filter: Alpha(opacity=100);
-    /*IE8 and earlier */
+}
+@media (max-width: 699px) and (orientation: landscape) {
+  /* line 200, ../scss/site.scss */
+  body .ucf {
+    background-size: 230px;
+    width: 230px;
+    height: 25px;
+    top: -3.5%;
+    left: 1.5%;
   }
-  /* line 171, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.gotonext {
-    bottom: 10px;
-    opacity: 0.85;
-    filter: Alpha(opacity=85);
-    /*IE8 and earlier */
+  /* line 208, ../scss/site.scss */
+  body .course-title {
+    max-width: 568px;
+    font-size: 3em;
   }
-  /* line 176, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.gotonext:hover {
-    opacity: 1;
-    filter: Alpha(opacity=100);
-    /*IE8 and earlier */
+  /* line 216, ../scss/site.scss */
+  body .section .slide.testimonial .container {
+    padding: 10px;
+    font-size: 1.1em;
   }
-  /* line 181, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.gotonext:before {
-    content: "Scroll for More";
-    text-align: center;
-    width: 80px;
-    font-size: 0.65em;
-    position: absolute;
-    bottom: 45px;
-    left: -48%;
+  /* line 220, ../scss/site.scss */
+  body .section .slide.testimonial .container h4 {
+    width: 320px;
   }
-  /* line 192, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.gototop {
-    bottom: 10px;
-    opacity: 0.85;
-    filter: Alpha(opacity=85);
-    /*IE8 and earlier */
+  /* line 223, ../scss/site.scss */
+  body .section .slide.testimonial .container blockquote {
+    width: 320px;
   }
-  /* line 197, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.gototop:hover {
-    opacity: 1;
-    filter: Alpha(opacity=100);
-    /*IE8 and earlier */
+  /* line 229, ../scss/site.scss */
+  body .section .slide#allison, body .section .slide#jairo {
+    background-size: 80%;
   }
-  /* line 202, ../scss/modules/fullpage/_section.scss */
-  .section .fullPage-sectionsNav.gototop:before {
-    content: "Back to Top";
-    text-align: center;
-    width: 80px;
-    font-size: 0.45em;
-    position: absolute;
-    bottom: 45px;
-    left: -48%;
+}
+@media (max-width: 499px) and (orientation: portrait) {
+  /* line 243, ../scss/site.scss */
+  body .ucf {
+    background-size: 230px;
+    width: 230px;
+    height: 25px;
+    top: -3.5%;
+    left: 1.5%;
+  }
+  /* line 251, ../scss/site.scss */
+  body .course-title {
+    max-width: 290px;
+    font-size: 3.1em;
+  }
+  /* line 259, ../scss/site.scss */
+  body .section .slide.testimonial .container {
+    padding: 10px;
+    font-size: 1.1em;
+  }
+  /* line 263, ../scss/site.scss */
+  body .section .slide.testimonial .container h4 {
+    width: 320px;
+  }
+  /* line 266, ../scss/site.scss */
+  body .section .slide.testimonial .container blockquote {
+    width: 320px;
+  }
+  /* line 272, ../scss/site.scss */
+  body .section .slide#allison, body .section .slide#jairo {
+    background-size: 150%;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 286, ../scss/site.scss */
+  body .ucf {
+    background-size: 300px;
+    width: 300px;
+    height: 25px;
+    top: 0;
+    left: 1.5%;
+  }
+  /* line 294, ../scss/site.scss */
+  body .course-title {
+    margin-top: 50px;
+    font-size: 6em;
+  }
+  /* line 308, ../scss/site.scss */
+  body .section .slide#allison, body .section .slide#jairo {
+    background-size: 90%;
   }
 }

@@ -132,7 +132,7 @@
 }
 #fullPage-nav li .active span,
 .fullPage-slidesNav .active span {
-    background: #333;
+    background: rgba(255,204,0,0.8);
 }
 #fullPage-nav span,
 .fullPage-slidesNav span {
@@ -160,71 +160,4 @@
 }
 .fullPage-tooltip.left {
     left: 20px;
-}
-
-
-// Tablet
-@media screen and (max-width: 999px){
-    .controlArrow {
-        position: absolute;
-        top: 50%;
-        cursor: pointer;
-        width: 0;
-        height: 0;
-        font-size: 2em;
-        /*border-style: solid;*/
-        margin-top: -38px;
-        display: none;
-    }
-    .controlArrow.prev {
-        left: 15px;
-        width: 0;
-        /*border-width: 38.5px 34px 38.5px 0;
-        border-color: transparent #fff transparent transparent;*/
-    }
-    .controlArrow.next {
-        right: 15px;
-        /*border-width: 38.5px 0 38.5px 34px;
-        border-color: transparent transparent transparent #fff;*/
-    }
-}
-
-// Mobile
-@media screen and (max-width: 599px){
-    .controlArrow {
-        position: absolute;
-        top: 90%;
-        cursor: pointer;
-        width: 0;
-        height: 0;
-        font-size: 2em;
-        margin-top: -38px;
-    }
-    .controlArrow.prev {
-        left: 15px;
-        width: 0;
-    }
-    .controlArrow.next {
-        right: 35px;
-    }
-}
-
-// Small Desktop
-@media screen and (min-width: 1000px){
-    .controlArrow {
-        position: absolute;
-        top: 30%;
-        cursor: pointer;
-        width: 0;
-        height: 0;
-        font-size: 2em;
-        margin-top: -38px;
-    }
-    .controlArrow.prev {
-        left: 15px;
-        width: 0;
-    }
-    .controlArrow.next {
-        right: 35px;
-    }
 }
