@@ -24,7 +24,8 @@
     <!--[if lt IE 8]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a></p>
     <![endif]-->
-
+    
+    <h1 class="ucf">University of Central Florida</h1>
     
     <!--BEGIN: Content-->
     <div class="page-container">
@@ -41,7 +42,7 @@
                         </p>
                     </div>
                 </div>
-                <a class="fullPage-sectionsNav gotonext" href="javascript:$.fn.fullpage.moveSectionDown();"><i class="fa fa-chevron-down"></i></a>
+                <a class="sectionsNav go" href="javascript:$.fn.fullpage.moveSectionDown();" id="goNext"><i class="fa fa-chevron-down"></i></a>
             </div>
         </div>
         <!-- FINIS: PAGE -->
@@ -52,10 +53,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-md-7">
-                            <h4>Allison Laera - <br>UCF Evening MBA Graduate</h4>
+                            <h4>Allison Laera - '04 &amp; '09<br>UCF Evening MBA Graduate</h4>
                             <blockquote>"The <strong>UCF MBA</strong> program helped my career because I was able to access a network of professionals.
                                 I am truly grateful for the friendships and networking opportunities that I gained from my MBA program."</blockquote>
-                            
                         </div>
                         <div class="col-xs-12 col-md-5"></div>
                     </div>
@@ -65,10 +65,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-md-7">
-                            <h4>Jairo Batista - <br>UCF Evening MBA Graduate</h4>
+                            <h4>Jairo Batista - '09<br>UCF Evening MBA Graduate</h4>
                             <blockquote>The best part was being able to take courses that fit my schedule while being able to working during the day. 
                                 My school schedule did not interfere with my work schedule, making it less stressful to earn my MBA.</blockquote>
-                            
                         </div>
                         <div class="col-xs-12 col-md-5"></div>
                     </div>
@@ -77,19 +76,16 @@
             <!--<div class="slide">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-md-8"></div>
-                        <div class="col-xs-12 col-md-4"></div>
+                        <div class="col-xs-12 col-md-7"></div>
+                        <div class="col-xs-12 col-md-5"></div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-md-8"></div>
-                        <div class="col-xs-12 col-md-4"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8"></div>
-                        <div class="col-xs-12 col-md-4"></div>
+                        <div class="col-xs-12 col-md-7"></div>
+                        <div class="col-xs-12 col-md-5"></div>
                     </div>
                 </div>
             </div>-->
+            <a class="sectionsNav" href="javascript:$.fn.fullpage.moveSectionDown();" id="goNext1"><i class="fa fa-chevron-down"></i></a>
         </div>
         <!-- FINIS: PAGE -->
 
@@ -99,7 +95,6 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
                         <h2>Increase Your Value and Build Your Network...Close to Home.</h2>
-                        <p>&nbsp;</p>
                     </div>
                     <div class="col-xs-12 col-md-12">
                         <div class="row">
@@ -147,10 +142,7 @@
         </div>
         <!-- FINIS: PAGE -->
 
-
-        <h1 class="ucf">University of Central Florida</h1>
         <div class="copyright"><small>&copy; 2014 University of Central Florida, College of Business Administration</small></div>
-
     </div>
 
     <!-- BEGIN: Scripts -->
@@ -168,39 +160,12 @@
 				'verticalCentered': false,
 				resize: false,
                 navigation: true, // if "autoScroll" is false then "navigation" is false
-                //autoScrolling: false, // activate for desktop
                 slidesNavigation: true,
                 loopHorizontal: false,
                 scrollOverflow: true // activate for mobile
 			});
 		});
     </script>
-    <!--<script>
-        $(document).ready(function ()
-        {
-            //FullPage Settings
-            $.fn.fullpage({
-                resize: false,
-                anchors: ['Home', 'About'],
-                //navigation: true,
-                //navigationTooltips: ['First', 'Second', 'Third', 'Fourth'],
-                //slidesNavigation: true,
-                //slidesNavPosition: 'top',
-                loopHorizontal: false,
-                //autoScrolling: false, // activate for desktop
-                //scrollOverflow: true, // activate for mobile
-                css3: true,
-                //paddingTop: '1.8em',
-                //paddingBottom: '1.3em',
-                fixedElements: '.ucf, .copyright',
-
-                //events
-                onLeave: function (index, direction) { },
-                afterLoad: function (anchorLink, index) { },
-                afterRender: function () { }
-            });
-        });
-    </script>-->
     <script>
         //YouTube Player Settings
         var tag = document.createElement('script'); tag.src = "https://www.youtube.com/player_api"; var firstScriptTag = document.getElementsByTagName('script')[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);

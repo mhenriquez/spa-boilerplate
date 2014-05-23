@@ -1,15 +1,13 @@
 /*-------------------------------------
 Primary Styles
 -------------------------------------*/
-
+// All Viewports
 html, body {
     background: #ddd;
     background-image: url(images/bg.jpg);
     background-size: cover;
     color: #fff;
 }
-
-// All
 
 .img-block, .img-block img {
     background: #cc9900;
@@ -21,7 +19,6 @@ html, body {
 
 // Mobile (landscape)
 @media (max-width: 767px) {
-
     .img-block, .img-block img {
         background: #cc9900;
         border:1px solid #cc9900;
@@ -29,12 +26,10 @@ html, body {
         width: 240px;
         height: 200px;
     }
-    
 }
 
 // Mobile (portrait)
 @media (max-width: 380px) {
-
     img {
         max-width:275px;
     }
@@ -42,7 +37,6 @@ html, body {
 
 // Small Desktop
 @media (min-width:1000px){
-    
     .img-block, .img-block img {
         background: #cc9900;
         border:1px solid #cc9900;
@@ -50,25 +44,6 @@ html, body {
         width: 320px;
         height: 300px;
     }
-    
-}
-
-
-
-/*-------------------------------------
-Typography
--------------------------------------*/
-
-.black-text {
-    color:#000;
-}
-
-.yellow-text {
-    color:#ffcc00;
-}
-
-.gold-text {
-    color:#cc9900;
 }
 
 /*------------------------------------- */
@@ -103,7 +78,7 @@ Typography
 }
 
 /*-------------------------------------
-Sections
+ Sections
 -------------------------------------*/
 
 .section {

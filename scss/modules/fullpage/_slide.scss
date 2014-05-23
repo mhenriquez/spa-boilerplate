@@ -1,12 +1,14 @@
-// All Screens
+// All Viewports //
 
 .controlArrow {
-    position: absolute;
+    margin-top: -38px;
     width: 0;
     height: 0;
     font-size: 2em;
-    margin-top: -38px;
-
+    
+    position: absolute;
+    top: 88%;
+    
     &.prev {
         left: 15px;
         width: 0;
@@ -17,25 +19,25 @@
     }
 }
 
-// Tablet
+// Tablet //
 @media (max-width: 999px){
     .controlArrow {
-        top: 90%;
+        top: 88%;
     }
 
 }
 
-// Mobile-Landscape
+// Mobile-Landscape //
 @media (max-width: 699px) and (orientation: landscape){}
 
-// Mobile-Portrait
+// Mobile-Portrait //
 @media (max-width: 499px) and (orientation: portrait){
     .controlArrow {
-        top: 90%;
+        top: 88%;
     }
 }
 
-// Small Desktop
+// Small Desktop //
 @media (min-width: 1000px){
     .controlArrow {
         top: 90%;
@@ -43,8 +45,8 @@
     }
 }
 
-// Notebook
+// Notebook //
 @media (min-width: 1300px){}
 
-// Large Desktop
+// Large Desktop //
 @media (min-width: 1600px){}
