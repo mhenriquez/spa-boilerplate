@@ -7,7 +7,7 @@
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
-/* line 9, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 9, ../scss/modules/fullpage/_fullpage.scss */
 #superContainer {
   height: 100%;
   position: relative;
@@ -15,7 +15,7 @@
   -ms-touch-action: none;
 }
 
-/* line 16, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 16, ../scss/modules/fullpage/_fullpage.scss */
 .section {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -23,18 +23,18 @@
   box-sizing: border-box;
 }
 
-/* line 22, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 22, ../scss/modules/fullpage/_fullpage.scss */
 .slide {
   float: left;
 }
 
-/* line 25, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 25, ../scss/modules/fullpage/_fullpage.scss */
 .slide, .slidesContainer {
   height: 100%;
   display: block;
 }
 
-/* line 29, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 29, ../scss/modules/fullpage/_fullpage.scss */
 .slides {
   height: 100%;
   overflow: hidden;
@@ -45,13 +45,13 @@
   transition: all 0.3s ease-out;
 }
 
-/* line 38, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 38, ../scss/modules/fullpage/_fullpage.scss */
 .section.table, .slide.table {
   display: table;
   width: 100%;
 }
 
-/* line 42, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 42, ../scss/modules/fullpage/_fullpage.scss */
 .tableCell {
   display: table-cell;
   vertical-align: middle;
@@ -59,13 +59,13 @@
   height: 100%;
 }
 
-/* line 48, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 48, ../scss/modules/fullpage/_fullpage.scss */
 .slidesContainer {
   float: left;
   position: relative;
 }
 
-/* line 52, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 52, ../scss/modules/fullpage/_fullpage.scss */
 .controlArrow {
   position: absolute;
   top: 50%;
@@ -77,23 +77,23 @@
   margin-top: -38px;
 }
 
-/* line 62, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 62, ../scss/modules/fullpage/_fullpage.scss */
 .controlArrow.prev {
   left: 15px;
   width: 0;
 }
 
-/* line 68, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 68, ../scss/modules/fullpage/_fullpage.scss */
 .controlArrow.next {
   right: 15px;
 }
 
-/* line 73, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 73, ../scss/modules/fullpage/_fullpage.scss */
 .scrollable {
   overflow: scroll;
 }
 
-/* line 76, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 76, ../scss/modules/fullpage/_fullpage.scss */
 .easing {
   -webkit-transition: all 0.7s ease-out;
   -moz-transition: all 0.7s ease-out;
@@ -101,7 +101,7 @@
   transition: all 0.7s ease-out;
 }
 
-/* line 82, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 82, ../scss/modules/fullpage/_fullpage.scss */
 #fullPage-nav {
   position: fixed;
   z-index: 100;
@@ -110,17 +110,17 @@
   opacity: 1;
 }
 
-/* line 89, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 89, ../scss/modules/fullpage/_fullpage.scss */
 #fullPage-nav.right {
   right: 17px;
 }
 
-/* line 92, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 92, ../scss/modules/fullpage/_fullpage.scss */
 #fullPage-nav.left {
   left: 17px;
 }
 
-/* line 95, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 95, ../scss/modules/fullpage/_fullpage.scss */
 .fullPage-slidesNav {
   position: absolute;
   z-index: 4;
@@ -128,24 +128,24 @@
   opacity: 1;
 }
 
-/* line 101, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 101, ../scss/modules/fullpage/_fullpage.scss */
 .fullPage-slidesNav.bottom {
   bottom: 17px;
 }
 
-/* line 104, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 104, ../scss/modules/fullpage/_fullpage.scss */
 .fullPage-slidesNav.top {
   top: 17px;
 }
 
-/* line 108, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 108, ../scss/modules/fullpage/_fullpage.scss */
 #fullPage-nav ul,
 .fullPage-slidesNav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 113, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 113, ../scss/modules/fullpage/_fullpage.scss */
 #fullPage-nav li,
 .fullPage-slidesNav li {
   display: block;
@@ -155,12 +155,12 @@
   position: relative;
 }
 
-/* line 120, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 120, ../scss/modules/fullpage/_fullpage.scss */
 .fullPage-slidesNav li {
   display: inline-block;
 }
 
-/* line 124, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 124, ../scss/modules/fullpage/_fullpage.scss */
 #fullPage-nav li a,
 .fullPage-slidesNav li a {
   display: block;
@@ -172,13 +172,13 @@
   text-decoration: none;
 }
 
-/* line 134, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 134, ../scss/modules/fullpage/_fullpage.scss */
 #fullPage-nav li .active span,
 .fullPage-slidesNav .active span {
   background: rgba(255, 204, 0, 0.8);
 }
 
-/* line 138, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 138, ../scss/modules/fullpage/_fullpage.scss */
 #fullPage-nav span,
 .fullPage-slidesNav span {
   top: 2px;
@@ -194,7 +194,7 @@
   z-index: 1;
 }
 
-/* line 151, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 151, ../scss/modules/fullpage/_fullpage.scss */
 .fullPage-tooltip {
   position: absolute;
   color: #fff;
@@ -203,12 +203,12 @@
   top: -2px;
 }
 
-/* line 158, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 158, ../scss/modules/fullpage/_fullpage.scss */
 .fullPage-tooltip.right {
   right: 20px;
 }
 
-/* line 161, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_fullpage.scss */
+/* line 161, ../scss/modules/fullpage/_fullpage.scss */
 .fullPage-tooltip.left {
   left: 20px;
 }
@@ -216,14 +216,14 @@
 /*
 background: rgba(255,255,255,.3); //- white
 */
-/* line 7, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_section.scss */
+/* line 7, ../scss/modules/fullpage/_section.scss */
 .fullPage-header {
   position: absolute;
   top: 0;
   left: 3%;
 }
 
-/* line 13, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_section.scss */
+/* line 13, ../scss/modules/fullpage/_section.scss */
 .sectionsNav {
   background: rgba(255, 204, 0, 0.3);
   border: 2px solid #ffcc00;
@@ -272,27 +272,27 @@ background: rgba(255,255,255,.3); //- white
 }
 
 @media (max-width: 999px) {
-  /* line 65, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_section.scss */
+  /* line 65, ../scss/modules/fullpage/_section.scss */
   .sectionsNav {
     bottom: 10%;
     left: 47%;
   }
 }
 @media (max-width: 699px) and (orientation: landscape) {
-  /* line 73, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_section.scss */
+  /* line 73, ../scss/modules/fullpage/_section.scss */
   .sectionsNav {
     bottom: 18%;
     left: 46%;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 81, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_section.scss */
+  /* line 81, ../scss/modules/fullpage/_section.scss */
   .sectionsNav {
     bottom: 12%;
     left: 43%;
   }
 }
-/* line 3, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_slide.scss */
+/* line 3, ../scss/modules/fullpage/_slide.scss */
 .controlArrow {
   margin-top: -38px;
   width: 0;
@@ -301,36 +301,36 @@ background: rgba(255,255,255,.3); //- white
   position: absolute;
   top: 88%;
 }
-/* line 12, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_slide.scss */
+/* line 12, ../scss/modules/fullpage/_slide.scss */
 .controlArrow.prev {
   left: 15px;
   width: 0;
 }
-/* line 17, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_slide.scss */
+/* line 17, ../scss/modules/fullpage/_slide.scss */
 .controlArrow.next {
   right: 35px;
 }
 
 @media (max-width: 999px) {
-  /* line 24, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_slide.scss */
+  /* line 24, ../scss/modules/fullpage/_slide.scss */
   .controlArrow {
     top: 88%;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 35, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_slide.scss */
+  /* line 35, ../scss/modules/fullpage/_slide.scss */
   .controlArrow {
     top: 88%;
   }
 }
 @media (min-width: 1000px) {
-  /* line 42, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/modules/fullpage/_slide.scss */
+  /* line 42, ../scss/modules/fullpage/_slide.scss */
   .controlArrow {
     top: 90%;
     cursor: pointer;
   }
 }
-/* line 2, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 2, ../scss/partials/_base.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -339,7 +339,7 @@ html, body {
   height: 100%;
 }
 
-/* line 10, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 10, ../scss/partials/_base.scss */
 body {
   background: #ededed url(../images/bg-lg.jpg) no-repeat fixed top center;
   background-size: cover;
@@ -358,32 +358,32 @@ body {
     }
     */
 }
-/* line 16, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 16, ../scss/partials/_base.scss */
 body h1, body h2, body h3, body h4, body h5 {
   font-family: 'Arvo', sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
   line-height: 1em;
 }
-/* line 23, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 23, ../scss/partials/_base.scss */
 body .ucf {
   background-image: url(../images/ucflogo.png);
   background-repeat: no-repeat;
   position: absolute;
   text-indent: -999px;
 }
-/* line 44, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 44, ../scss/partials/_base.scss */
 body .course-title {
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   letter-spacing: 0.006em;
   color: #fff;
 }
-/* line 51, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 51, ../scss/partials/_base.scss */
 body .btn {
   margin-bottom: 8px;
 }
-/* line 55, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 55, ../scss/partials/_base.scss */
 body .copyright {
   padding: 5px;
   font-size: 0.6em;
@@ -393,51 +393,57 @@ body .copyright {
   left: 0;
   z-index: 100;
 }
-/* line 71, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 71, ../scss/partials/_base.scss */
 body .section:nth-child(2n+1) {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
-/* line 76, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 76, ../scss/partials/_base.scss */
 body .section:nth-child(2n) {
   background: rgba(250, 250, 250, 0.1);
   color: #333;
 }
-/* line 81, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 81, ../scss/partials/_base.scss */
 body .section:nth-child(1) {
   background: rgba(36, 84, 128, 0.2) url(../images/mbaclass.png) top right;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 89, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 89, ../scss/partials/_base.scss */
 body .section .slide.testimonial .container {
   padding: 30px;
   height: 100%;
-  font-size: 2.3em;
-  line-height: 1.1em;
 }
-/* line 94, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 93, ../scss/partials/_base.scss */
 body .section .slide.testimonial .container h4 {
   color: #cc9900;
 }
-/* line 97, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-body .section .slide.testimonial .container blockquote {
+/* line 97, ../scss/partials/_base.scss */
+body .section .slide.testimonial .container blockquote p {
+  font-size: 2.3em;
+  line-height: 1.1em;
   color: #333;
 }
-/* line 103, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 106, ../scss/partials/_base.scss */
+body .section .slide#tkemmerling {
+  background: url(../images/t1-tkemmerling.png) bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 112, ../scss/partials/_base.scss */
 body .section .slide#allison {
   background: url(../images/t2-alaera.png) bottom right;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 109, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 118, ../scss/partials/_base.scss */
 body .section .slide#jairo {
   background: url(../images/t3-jbatista.png) bottom right;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 118, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-body .section .sectionsNav.go:before, body .section .sectionsNav#goNext:before, body .section .sectionsNav#goNext1:before {
+/* line 127, ../scss/partials/_base.scss */
+body .section .sectionsNav.go:before, body .section .sectionsNav#goNext:before, body .section .sectionsNav#goApply:before, body .section .sectionsNav#goTop:before {
   width: 100px;
   position: absolute;
   bottom: 50px;
@@ -446,17 +452,21 @@ body .section .sectionsNav.go:before, body .section .sectionsNav#goNext:before, 
   text-align: center;
   text-shadow: 0.3px 0.3px 1px rgba(0, 0, 0, 0.6);
 }
-/* line 131, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+/* line 140, ../scss/partials/_base.scss */
 body .section .sectionsNav#goNext:before {
   content: "Testimonials and More Information";
 }
-/* line 138, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-body .section .sectionsNav#goNext1:before {
+/* line 147, ../scss/partials/_base.scss */
+body .section .sectionsNav#goApply:before {
   content: "How to Apply";
+}
+/* line 154, ../scss/partials/_base.scss */
+body .section .sectionsNav#goTop:before {
+  content: "Back to Top";
 }
 
 @media (max-width: 999px) {
-  /* line 150, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+  /* line 166, ../scss/partials/_base.scss */
   body {
     /*
     .video-player {
@@ -465,7 +475,7 @@ body .section .sectionsNav#goNext1:before {
     }
     */
   }
-  /* line 152, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+  /* line 168, ../scss/partials/_base.scss */
   body .ucf {
     background-size: 300px;
     width: 300px;
@@ -473,19 +483,19 @@ body .section .sectionsNav#goNext1:before {
     top: -1.5%;
     left: 1.5%;
   }
-  /* line 167, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+  /* line 183, ../scss/partials/_base.scss */
   body .course-title {
     margin-top: 30px;
     max-width: 400px;
     font-size: 6em;
   }
-  /* line 175, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide#allison, body .section .slide#jairo {
+  /* line 191, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling, body .section .slide#allison, body .section .slide#jairo {
     background-size: 130%;
   }
 }
 @media (max-width: 699px) and (orientation: landscape) {
-  /* line 189, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+  /* line 205, ../scss/partials/_base.scss */
   body .ucf {
     background-size: 230px;
     width: 230px;
@@ -493,31 +503,34 @@ body .section .sectionsNav#goNext1:before {
     top: -3.5%;
     left: 1.5%;
   }
-  /* line 197, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+  /* line 213, ../scss/partials/_base.scss */
   body .course-title {
     max-width: 560px;
     font-size: 3em;
   }
-  /* line 205, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide.testimonial .container {
+  /* line 220, ../scss/partials/_base.scss */
+  body .section .slide .container {
     padding: 10px;
-    font-size: 1.1em;
   }
-  /* line 209, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide.testimonial .container h4 {
-    width: 320px;
-  }
-  /* line 212, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide.testimonial .container blockquote {
-    width: 320px;
-  }
-  /* line 218, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide#allison, body .section .slide#jairo {
+  /* line 224, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling, body .section .slide#allison, body .section .slide#jairo {
     background-size: 80%;
+  }
+  /* line 227, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling h4, body .section .slide#allison h4, body .section .slide#jairo h4 {
+    width: 320px;
+  }
+  /* line 231, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling blockquote, body .section .slide#allison blockquote, body .section .slide#jairo blockquote {
+    width: 320px;
+  }
+  /* line 234, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling blockquote p, body .section .slide#allison blockquote p, body .section .slide#jairo blockquote p {
+    font-size: 1.1em;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 231, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+  /* line 249, ../scss/partials/_base.scss */
   body .ucf {
     background-size: 230px;
     width: 230px;
@@ -525,31 +538,34 @@ body .section .sectionsNav#goNext1:before {
     top: -3.5%;
     left: 1.5%;
   }
-  /* line 239, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+  /* line 257, ../scss/partials/_base.scss */
   body .course-title {
     max-width: 200px;
     font-size: 3.1em;
   }
-  /* line 247, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide.testimonial .container {
+  /* line 264, ../scss/partials/_base.scss */
+  body .section .slide .container {
     padding: 10px;
-    font-size: 1.1em;
   }
-  /* line 251, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide.testimonial .container h4 {
-    width: 320px;
-  }
-  /* line 254, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide.testimonial .container blockquote {
-    width: 320px;
-  }
-  /* line 260, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide#allison, body .section .slide#jairo {
+  /* line 268, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling, body .section .slide#allison, body .section .slide#jairo {
     background-size: 150%;
+  }
+  /* line 271, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling h4, body .section .slide#allison h4, body .section .slide#jairo h4 {
+    width: 320px;
+  }
+  /* line 275, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling blockquote, body .section .slide#allison blockquote, body .section .slide#jairo blockquote {
+    width: 320px;
+  }
+  /* line 278, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling blockquote p, body .section .slide#allison blockquote p, body .section .slide#jairo blockquote p {
+    font-size: 1.1em;
   }
 }
 @media (min-width: 1000px) {
-  /* line 273, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+  /* line 293, ../scss/partials/_base.scss */
   body .ucf {
     background-size: 300px;
     width: 300px;
@@ -557,17 +573,23 @@ body .section .sectionsNav#goNext1:before {
     top: 0;
     left: 1.5%;
   }
-  /* line 281, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
+  /* line 301, ../scss/partials/_base.scss */
   body .course-title {
     margin-top: 50px;
     font-size: 5.5em;
   }
-  /* line 288, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_base.scss */
-  body .section .slide#allison, body .section .slide#jairo {
+  /* line 308, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling, body .section .slide#allison, body .section .slide#jairo {
     background-size: 90%;
   }
 }
-/* line 3, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+@media (min-width: 1300px) {
+  /* line 323, ../scss/partials/_base.scss */
+  body .section .slide#tkemmerling, body .section .slide#allison, body .section .slide#jairo {
+    background-size: 70%;
+  }
+}
+/* line 3, ../scss/partials/_socialbuttons.scss */
 .share-btn {
   display: inline-block;
   vertical-align: top;
@@ -581,22 +603,22 @@ body .section .sectionsNav#goNext1:before {
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 16, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 16, ../scss/partials/_socialbuttons.scss */
 .share-btn:active {
   margin-top: 3px;
 }
-/* line 19, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 19, ../scss/partials/_socialbuttons.scss */
 .share-btn:active .share-btn-action {
   padding-bottom: 3px;
   -webkit-box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15);
 }
-/* line 24, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 24, ../scss/partials/_socialbuttons.scss */
 .share-btn:active .share-btn-action:after {
   bottom: 3px;
 }
 
-/* line 31, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 31, ../scss/partials/_socialbuttons.scss */
 .share-btn-count {
   position: absolute;
   top: 0;
@@ -619,7 +641,7 @@ body .section .sectionsNav#goNext1:before {
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.18), 0 2px rgba(0, 0, 0, 0.07);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.18), 0 2px rgba(0, 0, 0, 0.07);
 }
-/* line 53, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 53, ../scss/partials/_socialbuttons.scss */
 .share-btn-count:before {
   content: '';
   position: absolute;
@@ -629,7 +651,7 @@ body .section .sectionsNav#goNext1:before {
   border: 6px solid transparent;
   border-top-color: #e6eff5;
 }
-/* line 63, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 63, ../scss/partials/_socialbuttons.scss */
 .share-btn-count:after {
   content: '';
   position: absolute;
@@ -640,7 +662,7 @@ body .section .sectionsNav#goNext1:before {
   border-top-color: #e6eff5;
 }
 
-/* line 74, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 74, ../scss/partials/_socialbuttons.scss */
 .share-btn-action {
   display: block;
   position: relative;
@@ -654,7 +676,7 @@ body .section .sectionsNav#goNext1:before {
   border-radius: 0 0 8px 8px;
 }
 
-/* line 87, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 87, ../scss/partials/_socialbuttons.scss */
 .share-btn-tweet {
   background: #83cfe8;
   background-image: -webkit-linear-gradient(top, #83cfe8, #6ebbd4);
@@ -665,12 +687,12 @@ body .section .sectionsNav#goNext1:before {
   box-shadow: inset 0 -6px rgba(0, 0, 0, 0.16), inset 0 -1px rgba(0, 0, 0, 0.15);
 }
 
-/* line 96, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 96, ../scss/partials/_socialbuttons.scss */
 .share-btn-tweet:before {
   display: none;
 }
 
-/* line 100, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 100, ../scss/partials/_socialbuttons.scss */
 .share-btn-like {
   background: #6480bd;
   background-image: -webkit-linear-gradient(top, #6480bd, #3c5894);
@@ -681,12 +703,12 @@ body .section .sectionsNav#goNext1:before {
   box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 109, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 109, ../scss/partials/_socialbuttons.scss */
 .share-btn-like:before {
   display: none;
 }
 
-/* line 113, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 113, ../scss/partials/_socialbuttons.scss */
 .share-btn-plus {
   background: #626262;
   background-image: -webkit-linear-gradient(top, #626262, #404040);
@@ -697,34 +719,34 @@ body .section .sectionsNav#goNext1:before {
   box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
 }
 
-/* line 122, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+/* line 122, ../scss/partials/_socialbuttons.scss */
 .share-btn-plus:before {
   display: none;
 }
 
 @media screen and (max-width: 999px) {
-  /* line 128, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+  /* line 128, ../scss/partials/_socialbuttons.scss */
   .share-btn {
     margin: 0 6px;
     width: 80px;
   }
 }
 @media screen and (max-width: 599px) {
-  /* line 136, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+  /* line 136, ../scss/partials/_socialbuttons.scss */
   .share-btn {
     margin: 0 6px;
     width: 70px;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 144, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+  /* line 144, ../scss/partials/_socialbuttons.scss */
   .share-btn {
     margin: 0 6px;
     width: 80px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 152, C:/Users/mhenriquez/Documents/GitHub/spa-boilerplate/scss/partials/_socialbuttons.scss */
+  /* line 152, ../scss/partials/_socialbuttons.scss */
   .share-btn {
     margin: 0 6px;
     width: 100px;

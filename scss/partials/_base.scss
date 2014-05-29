@@ -89,15 +89,24 @@ body {
                 .container {
                     padding: 30px;        
                     height: 100%;
-                    font-size: 2.3em;
-                    line-height: 1.1em;
+
                     h4 {
                         color: #cc9900;
                     }
                     blockquote {
-                        color: #333;
+                        p {
+                            font-size: 2.3em;
+                            line-height: 1.1em;
+                            color: #333;
+                        }
                     }
                 }
+            }
+
+            &#tkemmerling {
+                background:  url(../images/t1-tkemmerling.png) bottom right;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
 
             &#allison {
@@ -134,10 +143,17 @@ body {
                 } 
             }
             
-            &#goNext1 {
+            &#goApply {
                &:before {
                     @extend .go:before;
                     content:"How to Apply";
+                } 
+            }
+
+            &#goTop {
+               &:before {
+                    @extend .go:before;
+                    content:"Back to Top";
                 } 
             }
         }
@@ -172,7 +188,7 @@ body {
 
         .section {
             .slide {
-                &#allison, &#jairo {
+                &#tkemmerling, &#allison, &#jairo {
                     background-size: 130%;
                 }
             }
@@ -201,22 +217,24 @@ body {
 
         .section {
             .slide {
-                &.testimonial {
-                    .container {
-                        padding: 10px;
-                        font-size: 1.1em;
-                
-                        h4 {
-                            width: 320px;
-                        }
-                        blockquote {
-                            width: 320px;
-                        }
-                    }
+                .container {
+                    padding: 10px;
                 }
 
-                &#allison, &#jairo {
+                &#tkemmerling, &#allison, &#jairo {
                     background-size: 80%;
+
+                    h4 {
+                        width: 320px;
+                    }
+
+                    blockquote {
+                        width: 320px;
+
+                        p {
+                            font-size: 1.1em;
+                        }
+                    }
                 }
             }
         }
@@ -243,22 +261,24 @@ body {
 
         .section {
             .slide {
-                &.testimonial {
-                    .container {
-                        padding: 10px;
-                        font-size: 1.1em;
-                        
-                        h4 {
-                            width: 320px;
-                        }
-                        blockquote {
-                            width: 320px;
-                        }
-                    }
+                .container {
+                    padding: 10px;
                 }
 
-                &#allison, &#jairo {
+                &#tkemmerling, &#allison, &#jairo {
                     background-size: 150%;
+
+                    h4 {
+                        width: 320px;
+                    }
+
+                    blockquote {
+                        width: 320px;
+
+                        p {
+                            font-size: 1.1em;
+                        }
+                    }
                 }
             }
         }
@@ -285,7 +305,7 @@ body {
 
         .section {
             .slide {
-                &#allison, &#jairo {
+                &#tkemmerling, &#allison, &#jairo {
                     background-size: 90%;
                 }
             }
@@ -294,7 +314,19 @@ body {
 }
 
 // Notebook //
-@media (min-width: 1300px){}
+@media (min-width: 1300px){
+
+    body {
+        
+        .section {
+            .slide {
+                &#tkemmerling, &#allison, &#jairo {
+                    background-size: 70%;
+                }
+            }
+        }
+    }
+}
 
 // Large Desktop //
 @media (min-width: 1600px){}
