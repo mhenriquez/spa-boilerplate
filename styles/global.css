@@ -7,11 +7,11 @@ html, body { height: 100% !important; }
 .no-js .page { width: 100%; height: 100%; }
 
 /* line 23, scss/global.scss */
-body { background: #ededed url(../images/bg-lg1.jpg) no-repeat fixed top center; background-size: cover; padding: 0; letter-spacing: 1px; position: relative; z-index: 0; }
+body { padding: 0; letter-spacing: 1px; position: relative; z-index: 0; }
 
 /* Main central area styles */
 /* line 36, scss/global.scss */
 .page { word-wrap: break-word; position: relative; z-index: 3; }
 
-/* line 42, scss/global.scss */
-h1, h2, h3, h4, h5 { font-family: 'Arvo', sans-serif; }
+/* h1, h2, h3, h4, h5 { font-family: 'Arvo', sans-serif;
+}*/

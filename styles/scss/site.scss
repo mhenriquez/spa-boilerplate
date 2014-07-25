@@ -6,18 +6,22 @@
 @import "vendors/bootstrap";
 @import "vendors/font-awesome";
 
-// Modules
-@import 'modules/fullpage/base';
-@import "modules/bttrlazyloading/base";
+// Variables and Mixins
+@import "helpers/variables";
 
 // Partials
 @import 'partials/base';
 
+// Modules
+@import 'modules/fullpage/base';
+@import "modules/bttrlazyloading/base";
 
-// ----------------------------------------------------------------
-// Social
-// ----------------------------------------------------------------
-// @import 'partials/socialbuttons';
 
+
+// Sprites
+// @import "ico/*.png";
+// @include all-ico-sprites;
+
+// Typography
 // @charset "utf-8";
 // @import url(http://fonts.googleapis.com/css?family=Ribeye|Arvo|Sail|Graduate|Cookie|Bevan);
