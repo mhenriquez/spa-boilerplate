@@ -1,0 +1,85 @@
+// All Viewports //
+
+/*
+background: rgba(255,255,255,.3); //- white
+*/
+
+.fullPage-header {
+    position: absolute;
+    top: 0;
+    left: 3%;
+}
+
+.sectionsNav {
+    background: rgba(255,204,0,0.3); //- yellow
+    border: 2px solid #ffcc00;
+    border-radius: 25px;
+    padding: .1em .35em;
+    
+    position: absolute;
+    bottom: 8%;
+    left: 48%;
+    z-index: 100;
+    
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #fff;
+    
+    /* Copy this block to 'partials/base.scss'
+    
+    &.go {
+        
+        &:before {
+            width: 100px;
+            position: absolute;
+            bottom: 50px;
+            right: -30px;
+            
+            font-size: 0.50em;
+            text-align: center;
+            text-shadow: .3px .3px 1px rgba(0,0,0,0.6);
+        }
+    }
+    
+    &#goNext {
+        
+        &:before {
+            @extend .go:before;
+            content:"Learn More";
+        }
+    }
+    
+    &#goTop {
+        
+        &:before {
+            @extend .go:before;
+            content:"Back to Top";
+        }
+    }
+    
+    */
+}
+
+// Tablet
+@media (max-width: 999px){
+    .sectionsNav {
+        bottom: 10%;
+        left: 47%;
+    }
+}
+
+// Mobile-Landscape
+@media (max-width: 699px) and (orientation: landscape){
+    .sectionsNav {
+        bottom: 18%;
+        left: 46%;
+    }
+}
+
+// Mobile-Portrait
+@media (max-width: 499px) and (orientation: portrait){
+    .sectionsNav {
+        bottom: 12%;
+        left: 43%;
+    }
+}

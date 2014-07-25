@@ -1,0 +1,26 @@
+// Print //
+@media print {
+
+    .offcanvas body {
+	    overflow: visible;
+    }
+    
+    aside, section.page {
+        visibility: hidden;
+        display: none;
+    }
+
+    article.page-data {
+        display: block;
+        display: normal;
+    }
+
+    
+
+    // Removes undergraduate menu buttons.
+    //.st-menu-btn {
+    //    visibility: hidden;
+    //    display: none;
+    //}
+
+}

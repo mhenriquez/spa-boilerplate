@@ -1,0 +1,51 @@
+/* =============================================================================
+   Mixins
+   ========================================================================== */
+
+@mixin table-base {
+    th {
+        text-align: center;
+        font-weight: bold;
+    }
+    td, th {padding: 2px;}
+}
+
+@mixin left($dist) {
+    float: left;
+    margin-left: $dist;
+}
+
+@mixin aligned($dist, $dir) {
+    float: $dir;
+    margin-left: $dist;
+}
+
+#data {
+    @include table-base;
+    @include left(10px);
+    @include aligned(10px, right);
+}
+
+/*-- CSS3 Mixins --*/
+
+@mixin transform:translate3d($x,$y,$z) {
+    -ms-transform:translate3d($x,$y,$z);
+	-moz-transform:translate3d($x,$y,$z);
+	-webkit-transform:translate3d($x,$y,$z);
+	-o-transform:translate3d($x,$y,$z);
+}
+
+
+
+/* animation sets */
+
+//$animation-name;
+//$animation-duration;
+//$animation-timing-function;
+//$animation-delay;
+//$animation-iteration-count;
+//$animation-direction;
+//$animation-fill-mode;
+//$animation-play-state;
+
+/* move from / to  */
