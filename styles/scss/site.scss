@@ -10,12 +10,27 @@
 @import "helpers/variables";
 
 // Partials
-@import 'partials/base';
+/*-------------------------------------
+Social
+-------------------------------------*/
+@import 'partials/global';
+@import 'partials/primary';
+@import 'partials/nav';
+@import 'partials/profile';
 
 // Modules
+/*-------------------------------------
+Fullpage JS
+-------------------------------------*/
 @import 'modules/fullpage/base';
-@import "modules/bttrlazyloading/base";
+@import 'modules/fullpage/section';
+@import 'modules/fullpage/slide';
 
+/*-------------------------------------
+LazyLoading JS
+-------------------------------------*/
+@import "modules/bttrlazyloading/base";
+@import "modules/bttrlazyloading/animate.min";
 
 
 // Sprites

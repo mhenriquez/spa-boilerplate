@@ -34,7 +34,7 @@ requirejs.config({
             'lib/jquery-ui-1.10.3.min'
         ],
 
-        'modernizr': 'lib/modernizr-2.8.0.min',
+        'modernizr': 'lib/modernizr-2.6.2.min',
         'domReady': 'lib/domReady', // v2.0.1
 
         /**-----------------------------------
@@ -51,9 +51,8 @@ requirejs.config({
         'jscroll': 'lib/jquery.jscrollpane.min',
 
         // fullpage
-        'easings': 'lib/jquery.easings-1.9.2.min',
-        'slimscroll': 'lib/jquery.slimscroll-1.3.2.min',
-        'fullpage': 'lib/jquery.fullPage-2.0.7.min',
+        'slimscroll': 'lib/jquery.slimscroll.min',
+        'fullpage': 'lib/jquery.fullPage.min',
 
         // sly
         'easing': 'lib/jquery.easing-1.3.min',
@@ -102,7 +101,7 @@ requirejs.config({
         },
         'fullpage':
         {
-            deps: ['easing', 'jquery']
+            deps: ['jquery', 'jquery-ui', 'slimscroll']
         },
         'jscroll':
         {
@@ -154,21 +153,26 @@ require(['modernizr'], function ()
 
         domReady(function ()
         {
-            require(['angular', 'bootstrap', 'classie', 'easings', 'slimscroll', 'fullpage', 'lazyloader'], function (ng)
+            require(['jquery-ui', 'angular', 'bootstrap', 'slimscroll', 'fullpage', 'lazyloader'], function (ng)
             {
-                // scripts for all mediums
+                //FullPage Settings
+                $('#fullpage').fullpage({
+                    resize: false,
+                    anchors: ['pane1', 'pane2', 'pane3'],
+                    //navigation: true,
+                    //navigationTooltips: ['First', 'Second', 'Third', 'Fourth'],
+                    slidesNavigation: true,
+                    slidesNavPosition: 'bottom',
+                    loopHorizontal: false,
+                    autoScrolling: false, // activate for desktop
+                    fixedElements: '#navbar, #copyright',
+
+                    //events
+                    onLeave: function (index, direction) { },
+                    afterLoad: function (anchorLink, index) { },
+                    afterRender: function () { }
+                });
                 
-                var screenwidth = parseInt($(this).width());
-                var screenheight = parseInt($(this).height());
-
-                $('#page').fullpage({
-				    'verticalCentered': false,
-				    'resize': false,
-                    'slidesNavigation': true,
-                    'loopHorizontal': false,
-                    'autoScrolling': false
-			    });
-
                 // Lazyload website images
                 $('.img-responsive').bttrlazyloading({
                     //placeholder: 'data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==',
@@ -176,42 +180,10 @@ require(['modernizr'], function ()
                     animation: 'fadeIn',
                     container: '.scroll-pane'
                 });
-
+                
                 //YouTube Player Settings
                 //var tag = document.createElement('script'); tag.src = "https://www.youtube.com/player_api"; var firstScriptTag = document.getElementsByTagName('script')[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
                 //$('#playerA').click(function () { var player; player = new YT.Player('playerA', { height: '300', width: '320', videoId: 'sibcnHOLPec', playerVars: { 'autoplay': 1, 'playsinline': 1, 'showinfo': 0, 'controls': 1, 'enablejsapi': 1, 'modestbranding': 1, 'color': 'white', 'iv_load_policy': 3, 'rel': 0, 'theme': 'light'} }); });
-
-
-                if (screenwidth < 1000) // load only tablet scripts
-                {
-                    require([], function ()
-                    {
-                        //code
-
-                        if (screenwidth < 700) // load only mobile scripts
-                        {
-                            require([], function ()
-                            {
-                                //code
-                            });
-                        }
-                    });
-                }
-
-                if (screenwidth >= 1000) // load only desktop scripts
-                {
-                    require(['easing'], function ()
-                    {
-                        //code
-
-                        //-- Right-click disabled -----------------------
-                        //$(document).bind('contextmenu', function (e)
-                        //{
-                        //    return false;
-                        //}); //-----------------------------------------
-
-                    });
-                }
 
                 // Logs the end of the file.
                 console.log('END: main.js');
