@@ -52,7 +52,7 @@ requirejs.config({
 
         // fullpage
         'slimscroll': 'lib/jquery.slimscroll.min',
-        'fullpage': 'lib/jquery.fullPage.min',
+        'fullpage': 'lib/jquery.fullPage',
 
         // sly
         'easing': 'lib/jquery.easing-1.3.min',
