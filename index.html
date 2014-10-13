@@ -57,7 +57,10 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xs-12 text-center">
-                                        HOME
+                                        
+                                        <p>HOME</p>
+                                        <p id="msg"></p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -157,6 +160,15 @@
 
     <!--BEGIN: Scripts-->
 	<script data-main="/scripts/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+    <script>
+		require(['main'], function () {
+			// Once the 'main' script is loaded, load up scripts specific to this page
+			require(['pages/home'], function (Page) {
+				Page.onLoad();
+				Page.onResize();
+			});
+		});
+	</script>
     <!--Scripts: FINIS-->
 </body>
 </html>
