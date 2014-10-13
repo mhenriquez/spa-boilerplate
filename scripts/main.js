@@ -16,25 +16,25 @@ requirejs.config({
         'angular': [ // angular does not support AMD out of the box, put it in a shim
             '//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min',
             // If CDN fails, load from this location
-            'lib/angular-1.2.16.min'
+            'lib/angular.min' // v2.1.16
         ],
         'bootstrap': [
             '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min',
             // If CDN fails, load from this location
-            'lib/bootstrap-3.1.1.min'
+            'lib/bootstrap.min' // v3.1.1
         ],
         'jquery': [
             '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
             // If CDN fails, load from this location
-            'lib/jquery-2.0.3.min'
+            'lib/jquery-2.0.3.min' // v2.0.3
         ],
-        'jquery-ui': [
+        'jqueryui': [
             '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min',
             // If CDN fails, load from this location
-            'lib/jquery-ui-1.10.3.min'
+            'lib/jquery-ui.min' // v1.10.3
         ],
 
-        'modernizr': 'lib/modernizr-2.6.2.min',
+        'modernizr': 'lib/modernizr-2.6.2.min', // v2.6.2
         'domReady': 'lib/domReady', // v2.0.1
 
         /**-----------------------------------
@@ -42,13 +42,13 @@ requirejs.config({
         -----------------------------------**/
 
         'classie': 'lib/classie', // v1.0.1
-        'debounced': 'lib/jquery.debouncedresize',
-        'lazyloader': 'lib/jquery.bttrlazyloading-1.0.5.min',
+        'debounced': 'lib/jquery.debouncedresize', 
+        'lazyloader': 'lib/jquery.bttrlazyloading.min', // v1.0.5
 
         // pagescroll
-        'mousewheel': 'lib/jquery.mousewheel',
-        'mwintent': 'lib/mwheelIntent',
-        'jscroll': 'lib/jquery.jscrollpane.min',
+        'mousewheel': 'lib/jquery.mousewheel', // v3.1.9
+        'mwintent': 'lib/mwheelIntent', // v1.2
+        'jscroll': 'lib/jquery.jscrollpane.min', // v2.0
 
         // fullpage
         'slimscroll': 'lib/jquery.slimscroll.min',
@@ -56,7 +56,7 @@ requirejs.config({
 
         // sly
         'easing': 'lib/jquery.easing-1.3.min',
-        'sly': 'lib/sly-1.1.0.min'
+        'sly': 'lib/sly.min' // v1.1.0
 
         // -------------------------------------
     },
@@ -75,7 +75,7 @@ requirejs.config({
         {
             exports: '$'
         },
-        'jquery-ui':
+        'jqueryui':
         {
             deps: ['jquery'],
             exports: 'jqueryui'
@@ -101,7 +101,7 @@ requirejs.config({
         },
         'fullpage':
         {
-            deps: ['jquery', 'jquery-ui', 'slimscroll']
+            deps: ['jquery', 'jqueryui', 'slimscroll']
         },
         'jscroll':
         {
@@ -153,7 +153,7 @@ require(['modernizr'], function ()
 
         domReady(function ()
         {
-            require(['jquery-ui', 'angular', 'bootstrap', 'slimscroll', 'fullpage', 'lazyloader'], function (ng)
+            require(['jqueryui', 'angular', 'bootstrap', 'slimscroll', 'fullpage', 'lazyloader'], function (ng)
             {
                 //FullPage Settings
                 $('#fullpage').fullpage({
