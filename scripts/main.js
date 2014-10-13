@@ -12,52 +12,52 @@ requirejs.config({
         /**-----------------------------------
          Frameworks/Libraries
         -----------------------------------**/
-
+        
         'angular': [ // angular does not support AMD out of the box, put it in a shim
             '//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min',
             // If CDN fails, load from this location
-            'lib/angular.min' // v2.1.16
+            'lib/angular.min'// v2.1.16
         ],
         'bootstrap': [
             '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min',
             // If CDN fails, load from this location
-            'lib/bootstrap.min' // v3.1.1
+            'lib/bootstrap.min'// v3.1.1
         ],
         'jquery': [
             '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
             // If CDN fails, load from this location
-            'lib/jquery-2.0.3.min' // v2.0.3
+            'lib/jquery-2.0.3.min'// v2.0.3
         ],
         'jqueryui': [
             '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min',
             // If CDN fails, load from this location
-            'lib/jquery-ui.min' // v1.10.3
+            'lib/jquery-ui.min'// v1.10.3
         ],
-
+        
         'modernizr': 'lib/modernizr-2.6.2.min', // v2.6.2
-        'domReady': 'lib/domReady', // v2.0.1
+        'domReady': 'lib/domReady',// v2.0.1
 
         /**-----------------------------------
          jQuery Plugins
         -----------------------------------**/
-
-        'classie': 'lib/classie', // v1.0.1
+        
+        'classie': 'lib/classie',// v1.0.1
         'debounced': 'lib/jquery.debouncedresize', 
-        'lazyloader': 'lib/jquery.bttrlazyloading.min', // v1.0.5
-
+        'lazyloader': 'lib/jquery.bttrlazyloading.min',// v1.0.5
+        
         // pagescroll
-        'mousewheel': 'lib/jquery.mousewheel', // v3.1.9
-        'mwintent': 'lib/mwheelIntent', // v1.2
-        'jscroll': 'lib/jquery.jscrollpane.min', // v2.0
-
+        'mousewheel': 'lib/jquery.mousewheel',// v3.1.9
+        'mwintent': 'lib/mwheelIntent',// v1.2
+        'jscroll': 'lib/jquery.jscrollpane.min',// v2.0
+        
         // fullpage
-        'easings': 'lib/jquery.easings.min', // v1.9.2
-        'slimscroll': 'lib/jquery.slimscroll.min', // v1.3.2
-        'fullpage': 'lib/jquery.fullPage', // v1.8.0
-
+        'easings': 'lib/jquery.easings.min',// v1.9.2
+        'slimscroll': 'lib/jquery.slimscroll.min',// v1.3.2
+        'fullpage': 'lib/jquery.fullPage',// v1.8.0
+        
         // sly
-        'sly': 'lib/sly.min' // v1.1.0
-
+        'sly': 'lib/sly.min'// v1.1.0
+        
         // -------------------------------------
     },
     shim:
@@ -84,9 +84,9 @@ requirejs.config({
         {
             exports: 'modernizr'
         },
-
+        
         // -------------------------------------------
-
+        
         'debounced':
         {
             deps: ['jquery']
@@ -124,7 +124,7 @@ requirejs.config({
             deps: ['easings'],
             exports: 'sly'
         }
-
+        
         // -------------------------------------------
     }
 });
@@ -136,7 +136,7 @@ require(['modernizr'], function ()
     {
         // Log that jquery was loaded into the global name-space
         console.log('jQuery', $.fn.jquery, 'loaded!');
-
+        
 		// Google Analytics Tracking
 		//$('.dl-trigger').click(function () {
 		//	_gaq.push(['_trackEvent', 'Menu Button', 'Navigation', $(this).text()]);
@@ -145,8 +145,7 @@ require(['modernizr'], function ()
 		//$('.dl-menu a').click(function () {
 		//	_gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
 		//});
-
-
+        
         domReady(function ()
         {
             require(['easings', 'angular', 'bootstrap', 'slimscroll', 'fullpage', 'lazyloader'], function (ng)
@@ -156,7 +155,7 @@ require(['modernizr'], function ()
                     resize: false,
                     anchors: ['pane1', 'pane2', 'pane3'],
                     //navigation: true,
-                    //navigationTooltips: ['First', 'Second', 'Third', 'Fourth'],
+                    //navigationTooltips: ['First', 'Second', 'Third'],
                     slidesNavigation: true,
                     slidesNavPosition: 'bottom',
                     loopHorizontal: false,
@@ -197,7 +196,7 @@ require(['modernizr'], function ()
         //will not be loaded yet, they will wait until a valid jQuery
         //does load.
         requirejs.undef(failedId);
-
+        
         console.log('Modernizr did not load');
 
     } else 
