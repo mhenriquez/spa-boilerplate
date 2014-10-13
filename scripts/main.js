@@ -51,11 +51,11 @@ requirejs.config({
         'jscroll': 'lib/jquery.jscrollpane.min', // v2.0
 
         // fullpage
-        'slimscroll': 'lib/jquery.slimscroll.min',
-        'fullpage': 'lib/jquery.fullPage',
+        'easings': 'lib/jquery.easings.min', // v1.9.2
+        'slimscroll': 'lib/jquery.slimscroll.min', // v1.3.2
+        'fullpage': 'lib/jquery.fullPage', // v1.8.0
 
         // sly
-        'easing': 'lib/jquery.easing-1.3.min',
         'sly': 'lib/sly.min' // v1.1.0
 
         // -------------------------------------
@@ -91,17 +91,13 @@ requirejs.config({
         {
             deps: ['jquery']
         },
-        'easing':
-        {
-            deps: ['jquery']
-        },
         'easings':
         {
             deps: ['jquery']
         },
         'fullpage':
         {
-            deps: ['jquery', 'jqueryui', 'slimscroll']
+            deps: ['jquery', 'easings', 'slimscroll']
         },
         'jscroll':
         {
@@ -125,7 +121,7 @@ requirejs.config({
         },
         'sly':
         {
-            deps: ['easing'],
+            deps: ['easings'],
             exports: 'sly'
         }
 
@@ -153,7 +149,7 @@ require(['modernizr'], function ()
 
         domReady(function ()
         {
-            require(['jqueryui', 'angular', 'bootstrap', 'slimscroll', 'fullpage', 'lazyloader'], function (ng)
+            require(['easings', 'angular', 'bootstrap', 'slimscroll', 'fullpage', 'lazyloader'], function (ng)
             {
                 //FullPage Settings
                 $('#fullpage').fullpage({
