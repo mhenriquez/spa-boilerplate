@@ -198,9 +198,5 @@ require(['modernizr'], function ()
         requirejs.undef(failedId);
         
         console.log('Modernizr did not load');
-
-    } else 
-    {
-        
     }
 });
