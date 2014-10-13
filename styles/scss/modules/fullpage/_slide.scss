@@ -9,8 +9,8 @@
     position: absolute;
     top: 50%;
     
-    opacity: 0.65;
-    filter: Alpha(opacity=65);  /*IE8 and earlier */
+    opacity: 0.35;
+    filter: Alpha(opacity=35);  /*IE8 and earlier */
 
     &:hover {
         opacity: 1;
@@ -22,20 +22,30 @@
     }
 }
 .controlArrow.prev {
-    left: 0;
+    background-color: rgba(33, 33, 33, 0.1);
+    padding: 1em 3em 3em 1em;
     border-width: 0;
     border-color: transparent;
-    text-align: left;
+    border-radius: 0 2em 2em 0;
+    border-bottom: 1px solid #aaa;
+    
     //border: 1px dashed red;
     
-    padding: 1em 3em 3em 1em;
+    text-align: left;
+    left: 0;
+    z-index: 99;
 }
 .controlArrow.next {
-    right: 0;
+    background-color: rgba(33, 33, 33, 0.1);
+    padding: 1em 2.6em 3em 1.3em;
     border-width: 0;
     border-color: transparent;
-    text-align: right;
+    border-radius: 2em 0 0 2em;
+    border-bottom: 1px solid #aaa;
+    
     //border: 1px dashed red;
     
-    padding: 1em 2.6em 3em 1.3em;
+    text-align: right;
+    right: 0;
+    z-index: 99;
 }

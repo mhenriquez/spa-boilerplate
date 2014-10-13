@@ -3,7 +3,10 @@
 // --------------------------------------------------
 
 html {
+    background-image: url(images/riot-bg.jpg);
+    background-size: cover;
     height: 100%;
+    color: #fff;
     position: relative;
 }
 
@@ -26,7 +29,7 @@ html {
 body {
     @extend html;
     
-    padding-top: 50px;
+    //padding-top: 50px;
     //min-height: 2000px;
     
     /*Avoid flicker on slides transitions for mobile phones #336 */
