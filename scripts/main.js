@@ -7,7 +7,7 @@ console.log( 'START: main.js' );
 
 // Configure RequireJS
 requirejs.config({
-    baseUrl: '/scripts',
+    baseUrl: 'scripts',
     paths: {
         /**-----------------------------------
          Frameworks/Libraries
