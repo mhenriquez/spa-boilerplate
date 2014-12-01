@@ -41,7 +41,6 @@ requirejs.config({
          jQuery Plugins
         -----------------------------------**/
         
-        'classie': 'lib/classie',// v1.0.1
         'debounced': 'lib/jquery.debouncedresize', 
         'lazyloader': 'lib/jquery.bttrlazyloading.min',// v1.0.5
         
